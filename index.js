@@ -32,11 +32,11 @@ async function run() {
             res.send(inventory);
         });
 
-        app.post('/inventory', async (req, res) => {
-            const newInventory = req.body;
-            const result = await inventoryCollection.inventories(newInventory);
-            res.send(result);
-        });
+        // app.post('/inventory', async (req, res) => {
+        //     const newInventory = req.body;
+        //     const result = await inventoryCollection.inventories(newInventory);
+        //     res.send(result);
+        // });
 
     } finally {
 
